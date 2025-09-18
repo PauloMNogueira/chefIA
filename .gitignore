@@ -1,0 +1,23 @@
+# Dependências
+/node_modules
+
+# Compilação
+/dist
+
+# Variáveis de ambiente
+.env
+
+# Logs
+*.log
+
+# Arquivos de sistema
+.DS_Store
+thumbs.db
+
+# Arquivos de backup
+*.bak
+
+# Arquivos compactados gerados pelo agente
+*.tar.gz
+
+
