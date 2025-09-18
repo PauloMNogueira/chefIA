@@ -40,7 +40,7 @@ export class OpenRouterService {
     } catch (error) {
       console.error('Erro ao chamar OpenRouter API:', error);
       if (axios.isAxiosError(error)) {
-        throw new Error(`Erro na API 2: ${error.response?.status} - ${error.response?.statusText} - ${process.env}`);
+        throw new Error(`Erro na API 2: ${error.response?.status} - ${error.response?.statusText} - ${JSON.stringify(process.env)}`);
       }
       throw new Error('Erro interno do servidor');
     }
